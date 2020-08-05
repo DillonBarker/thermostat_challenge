@@ -36,6 +36,15 @@ describe('thermostat', function() {
       expect(thermostat.maxTemperature).toEqual(32)
     });
   });
+  describe('#isPowerSavingOn', function(){
+    it('returns true if its on', function(){
+      expect(thermostat.isPowerSavingOn()).toBeTruthy()
+    })
+    it('returns false if it not on', function(){
+      thermostat.powerSavingModeOff()
+      expect(thermostat.isPowerSavingOn()).toBeFalsy()
+    })
+  })
   describe('#resetTemperature', function(){
     it('resets temperature back to 20', function(){
       thermostat.up();
@@ -50,16 +59,14 @@ describe('thermostat', function() {
     })
     it('displays a usage string for a low temperature', function(){
       var i;
-      for (i = 0; i < 4; ++i) {
-        thermostat.down();
-      }
+      for (i = 0; i < 4; ++i){
+        thermostat.down();}
       expect(thermostat.currentUsage()).toBe('low-usage')
     })
     it('displays a usage string for a high temperature', function(){
       var i;
-      for (i = 0; i < 6; ++i) {
-        thermostat.up();
-      }
+      for (i = 0; i < 6; ++i){
+        thermostat.up();}
       expect(thermostat.currentUsage()).toBe('high-usage')
     })
   })

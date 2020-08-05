@@ -18,6 +18,12 @@ class Thermostat {
   powerSavingModeOff() {
     this.maxTemperature = 32
   }
+  isPowerSavingOn() {
+    if (this.maxTemperature === 25) {
+      return true
+    }
+    return false
+  }
   resetTemperature() {
     this.temperature = 20
   }
