@@ -20,5 +20,5 @@
 * Adding styles with css to the code. My current webpage is shown below, I added styles and animated buttons and search bars.
 
 <center>
-  <img src='./images/themostat.png'>
+  <img src='./images/thermostat.png'>
 </center>
