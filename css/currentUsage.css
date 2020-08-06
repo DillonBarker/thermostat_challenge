@@ -1,0 +1,16 @@
+.low-usage {
+  color: green;
+  font-size: 2rem;
+  transition: font-size 2s;
+}
+.medium-usage {
+  color: orange;
+  font-size: 3.5rem;
+  transition: font-size 2s;
+}
+.high-usage {
+  color: red;
+  font-size: 5rem;
+  transition: font-size 2s;
+  body.background-image: url(nuke.jpg)
+}

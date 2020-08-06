@@ -1,8 +1,11 @@
 body {
-  padding: 300px 50px 75px 100px;
-  background: rgba(0, 128, 0, 0.3)
+  padding: 200px 50px 75px 100px;
+  /* background: rgba(0, 128, 0, 0.3) */
+  background-image: url(../images/nuke.jpg)
 }
 
+
+/* This is the search box below used to have a text entry without a submit button */
 input[type=text] {
   width: 130px;
   -webkit-transition: width 0.4s ease-in-out;
@@ -10,7 +13,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  width: 50%;
+  width: 60%;
 }
 
 /* This stuff I got offline and optimised it for my colour scheme, it basically
@@ -20,7 +23,7 @@ the opacity of the green colour I like */
   display: inline-block;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
-  color: rgba(0, 128, 0, 1);
+  color: rgba(255, 99, 71, 1);
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: .15rem;
@@ -36,7 +39,7 @@ the opacity of the green colour I like */
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 128, 0, 0.3);
+  background-color: rgba(240, 50, 60, 0.5);
   border-radius: 10rem;
   z-index: -2;
 }
@@ -47,7 +50,7 @@ the opacity of the green colour I like */
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: rgba(0, 128, 0, 0.2);
+  background-color: rgba(255, 99, 71, 1);
   transition: all .3s;
   border-radius: 10rem;
   z-index: -1;
@@ -58,35 +61,26 @@ the opacity of the green colour I like */
 .button:hover:before {
   width: 100%;
 }
-
 * {
   font-family: Arial;
   text-decoration: none;
   font-size: 20px;
 }
-
 .container {
   padding-top: 50px;
   margin: 0 auto;
   width: 100%;
   text-align: center;
 }
-
 h1 {
   text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #777;
 }
-
 span {
   display: block;
   margin-top: 2rem;
   font-size: 2rem;
-  color: rgba(0, 128, 0, 0.9);
-}
-span a {
-  font-size: .7rem;
-  color: rgba(0, 128, 0, 0.3);
-  text-decoration: underline;
+  color: rgba(255, 99, 71, 1);
 }

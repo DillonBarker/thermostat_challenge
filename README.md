@@ -22,3 +22,8 @@
 <center>
   <img src='./images/thermostat.png'>
 </center>
+
+* My finished product as a result of messing round with css for a couple of hours is relatively similar to before but just with a whole new colour scheme which I liked better!
+<center>
+  <img src='./images/thermostat2.png'>
+</center>

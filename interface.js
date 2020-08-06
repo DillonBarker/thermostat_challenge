@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('#power-saving-mode-off').hide();
   var thermostat = new Thermostat();
   updateTemperature();
 
@@ -19,12 +20,16 @@ $(document).ready(function(){
 
   $('#power-saving-mode-on').click(function() {
     thermostat.powerSavingModeOn();
+    $('#power-saving-mode-on').hide();
+    $('#power-saving-mode-off').show();
     $('#power-saving-status').text('on')
     updateTemperature();
   })
 
   $('#power-saving-mode-off').click(function() {
     thermostat.powerSavingModeOff();
+    $('#power-saving-mode-off').hide();
+    $('#power-saving-mode-on').show();
     $('#power-saving-status').text('off')
     updateTemperature();
   })
@@ -39,12 +44,6 @@ $(document).ready(function(){
 
   function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
-    if(thermostat.currentUsage() === 'low-usage') {
-    $('#temperature').css('color', 'green')
-    } else if(thermostat.currentUsage() === 'medium-usage') {
-    $('#temperature').css('color', 'orange')
-    } else {
-    $('#temperature').css('color', 'red')
-    }
+    $('#temperature').attr('class', thermostat.currentUsage());
   };
 });
