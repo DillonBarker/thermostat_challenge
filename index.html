@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
+  <center>
   <head>
-    <title> Thermostat </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>  Thermostat </title>
+
   </head>
-  <body>
-    <h1> Temperature controls: </h1>
-    <h2 id='temperature'></h2>
-    <p>
-      <button id='up'> + </button>
-      <button id='down'> - </button>
-      <button id='reset'> Reset </button>
-      PSM status: <span id='power-saving-status'> on </span>
-      <button id='power-saving-mode-on'> Eco </button>
-      <button id='power-saving-mode-off'> Turbo </button>
-    </p>
+    <body>
+      <section>
+          <h1> Dills' Thermostat </h1>
+          <h1 id="temperature"></h1>
+        <p>
+          <div class ="container">
+            
+          <a href="#" class="button" id="up">+</a>
+          <a href="#" class="button" id="down">-</a>
+          <a href="#" class="button" id="reset">reset</a>
+
+          <span id="power-saving-status">on</span>
+
+          <a href="#" class="button" id="power-saving-mode-on">PSM on</a>
+          <a href="#" class="button" id="power-saving-mode-off">PSM off</a>
+          </div>
+        </p>
+      </section>
+
+      <section>
+        <h1>Current temperature: <span id="current-temperature">20</span></h1>
+        <form id="select-city">
+          <input id="current-city" type="text" name="search" placeholder="Enter a city"></input>
+        </form>
+      </section>
 
     <script src="jquery.js"></script>
-    <script src="interface.js"></script>
     <script src="src/Thermostat.js"></script>
-  </body>
+    <script src="interface.js"></script>
+    </body>
+  </center>
 </html>

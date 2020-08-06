@@ -11,5 +11,11 @@
 * Power saving mode is on by default but it can also be turned off
 * You can reset the temperature to 20 with a reset function
 * You can ask about the thermostat's current energy usage: < 18 is low-usage, <= 25 is medium-usage, anything else is high-usage.
-* (In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
 
+# Next tasks:
+
+* These involve creating an interface, then making this interact with the html code, so that you can have buttons on the thermostat that react to users clicking on the buttons.
+  - For example the up button, is linked to the ```thermostat.up()``` function, this turns the temperature up one.
+  - This is shown by the ```thermostat.temperature``` being displayed on the page also.
+* Adding styles with css to the code. My current webpage is shown below, I added styles and animated buttons and search bars.
+![image]('images/themostat.png')
