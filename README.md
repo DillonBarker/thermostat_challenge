@@ -18,4 +18,7 @@
   - For example the up button, is linked to the ```thermostat.up()``` function, this turns the temperature up one.
   - This is shown by the ```thermostat.temperature``` being displayed on the page also.
 * Adding styles with css to the code. My current webpage is shown below, I added styles and animated buttons and search bars.
-![image]('images/themostat.png')
+
+<center>
+  <img src='images/themostat.png'>
+</center>
