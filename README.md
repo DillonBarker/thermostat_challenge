@@ -27,3 +27,18 @@
 <center>
   <img src='./images/thermostat2.png'>
 </center>
+
+### API integration
+
+How to use:
+```
+ruby app.rb
+```
+
+To run the tests
+```
+rspec
+```
+```
+open public/SpecRunner.html
+```
