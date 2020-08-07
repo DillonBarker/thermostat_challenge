@@ -64,6 +64,7 @@ describe('thermostat', function() {
       expect(thermostat.currentUsage()).toBe('low-usage')
     })
     it('displays a usage string for a high temperature', function(){
+      thermostat.powerSavingModeOff();
       var i;
       for (i = 0; i < 6; ++i){
         thermostat.up();}
