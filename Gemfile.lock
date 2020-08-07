@@ -17,9 +17,12 @@ GEM
     mini_portile2 (2.4.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.2)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.5)
+    puma (4.3.5)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.0.8.1)
       rack
@@ -58,6 +61,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  puma
   rspec
   selenium-webdriver
   sinatra

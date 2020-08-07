@@ -8,3 +8,4 @@ gem 'sinatra'
 gem 'rspec'
 gem 'capybara', group: :test
 gem 'selenium-webdriver', group: :test
+gem 'puma'
