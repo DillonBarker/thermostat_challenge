@@ -5,7 +5,6 @@ class App < Sinatra::Base
 
   get '/' do
     File.read('public/index.html')
-    # session[:search] = params[:search]
   end
 
   run! if app_file == $0
